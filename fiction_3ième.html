@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Montrer, témoigner, réparer : le roman, le récit à l’épreuve du réel (récit, fiction)</title>
+    <style>
+        /* Palette de couleurs basée sur le violet (#803785) */
+        :root {
+            --primary-main: #803785;   /* Le violet de référence */
+            --primary-light: #F3EAF4;  /* Version pastel très douce pour les fonds et bordures */
+            --bg-color: #F9F6FA;       /* Fond de page très clair légèrement teinté */
+            --text-dark: #321B35;      /* Prune très sombre pour une lecture confortable */
+            --card-bg: #FFFFFF;        /* Blanc pour le bloc conteneur principal */
+            --accent-purple: #A54BB3;  /* Violet plus vif pour le lien de retour et les survols */
+            --shadow: rgba(128, 55, 133, 0.15);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-dark);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px var(--shadow);
+            border: 1px solid rgba(128, 55, 133, 0.15);
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: var(--accent-purple);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.2s ease;
+        }
+
+        .back-link:hover {
+            color: var(--primary-main);
+            text-decoration: underline;
+        }
+
+        h1 {
+            font-size: 2rem;
+            color: var(--text-dark);
+            margin-bottom: 20px;
+            border-bottom: 4px solid var(--primary-main);
+            padding-bottom: 15px;
+        }
+
+        .intro {
+            font-size: 1.05rem;
+            color: #4E3E50;
+            margin-bottom: 40px;
+            text-align: justify;
+        }
+
+        /* Grille de boutons d'action */
+        .action-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .btn-action {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            text-decoration: none;
+            background-color: #FFFFFF;
+            color: var(--text-dark);
+            border: 2px solid var(--primary-light);
+            padding: 25px 15px;
+            border-radius: 10px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.2s ease;
+            box-shadow: 0 4px 6px rgba(128, 55, 133, 0.02);
+        }
+
+        .btn-action:hover {
+            background-color: var(--primary-light);
+            color: var(--primary-main);
+            border-color: var(--primary-main);
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px var(--shadow);
+        }
+
+        .btn-action span.icon {
+            font-size: 2rem;
+            margin-bottom: 8px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 0.9rem;
+            color: #A393A6;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <a href="../index.html" class="back-link">← Retour à l'accueil</a>
+
+        <h1>Montrer, témoigner, réparer : le roman, le récit à l’épreuve du réel (récit, fiction)</h1>
+
+        <p class="intro">À mesure qu’ils s’affranchissent de l’héritage épique, roman et récit s’engagent dans un rapport privilégié et complexe avec le réel. Montrer, témoigner, tenter de réparer sont autant de possibles littéraires offerts à l’auteur. Ce dernier, s’efforçant de porter la voix de tous en même temps que la sienne, ouvre le lecteur à l’altérité, en orchestrant, selon la formule d’Alain Mabanckou, « le concert de la multiplicité d’expériences ». Les récits, du plus fictif au plus autobiographique, mettent à l’épreuve du réel l’auteur comme le lecteur : ils mettent des mots sur ce qui est perdu, invisible ou indicible ; ils s’efforcent de comprendre, et parfois de réparer les blessures, des souffrances intimes aux catastrophes humanitaires, sociales et/ou environnementales. En prenant appui sur l’étude et l’appropriation d’une œuvre intégrale ou d’un groupement de textes, comme sur des lectures cursives, dans le cadre d’un projet d’apprentissage, l’élève appréhende les potentialités de l’écriture romanesque et/ou autobiographique qui, en se confrontant à l’obstacle du réel, donnent matière à sentir, à connaitre et à penser, et inscrivent des voix singulières dans le tissu collectif. Plus largement, au fil de l’année et de sa progression, il mesure que l’écriture peut être un acte de justice symbolique, une tentative de recomposition des identités brisées ou des récits interrompus.</p>
+
+        <div class="action-grid">
+            <a href="menu/fiction_cours.html" class="btn-action">
+                <span class="icon">📖</span>
+                <span>Cours</span>
+            </a>
+            <a href="menu/fiction_exercices.html" class="btn-action">
+                <span class="icon">📝</span>
+                <span>Supports</span>
+            </a>
+            <a href="menu/fiction_lectures.html" class="btn-action">
+                <span class="icon">📚</span>
+                <span>Lectures</span>
+            </a>
+            <a href="menu/fiction_ressources.html" class="btn-action">
+                <span class="icon">🔗</span>
+                <span>Ressources</span>
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 - Espace Numérique de Français - Classe de 3ème</p>
+    </footer>
+
+</body>
+</html>
