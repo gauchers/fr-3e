@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cours de Français - 3ème</title>
+    <style>
+        /* Palette de couleurs basée sur le violet de l'image (#803785 / #93449B) */
+        :root {
+            --primary-main: #803785;   /* Le violet de référence */
+            --primary-light: #F3EAF4;  /* Version pastel très douce pour les fonds de bloc */
+            --bg-color: #F9F6FA;       /* Fond de page très clair avec une pointe de violet */
+            --text-dark: #321B35;      /* Prune très sombre pour une lecture confortable */
+            --card-bg: #FFFFFF;        /* Blanc pour les blocs principaux */
+            --accent-purple: #A54BB3;  /* Violet plus vif pour le survol et les interactions */
+            --shadow: rgba(128, 55, 133, 0.15);
+
+            /* Variante pour le public externe / professeurs / parents */
+            --neutral-bg: #F1EFF2;
+            --neutral-border: #D3CBD6;
+            --neutral-text: #5A4E5C;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-dark);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            margin: 40px auto;
+            max-width: 800px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: var(--text-dark);
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            color: #6C5670;
+            font-style: italic;
+        }
+
+        /* Grille des thèmes + progression */
+        .program-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            max-width: 1200px;
+            margin: 0 auto 50px auto;
+        }
+
+        .program-card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 8px 16px var(--shadow);
+            border: 1px solid rgba(128, 55, 133, 0.15);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .program-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 24px rgba(128, 55, 133, 0.25);
+            border-color: rgba(128, 55, 133, 0.3);
+        }
+
+        .program-card h2 {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            color: var(--text-dark);
+            border-bottom: 3px solid var(--primary-main);
+            padding-bottom: 10px;
+        }
+
+        .program-card p {
+            font-size: 0.95rem;
+            color: #4E3E50;
+            margin-bottom: 25px;
+            flex-grow: 1; /* Aligne les boutons en bas si les textes font des tailles différentes */
+        }
+
+        /* Style spécifique pour la carte d'administration / progression */
+        .program-card.admin-card {
+            background: var(--neutral-bg);
+            border-color: var(--neutral-border);
+            box-shadow: 0 4px 10px rgba(90, 78, 92, 0.08);
+        }
+        .program-card.admin-card h2 {
+            border-bottom-color: var(--neutral-border);
+            color: #453447;
+        }
+        .program-card.admin-card p {
+            color: var(--neutral-text);
+        }
+        .program-card.admin-card .btn-navigation {
+            background-color: var(--neutral-border);
+            color: #453447;
+        }
+        .program-card.admin-card .btn-navigation:hover {
+            background-color: var(--text-dark);
+            color: #ffffff;
+        }
+
+        /* Style des boutons de navigation */
+        .btn-navigation {
+            display: inline-block;
+            text-align: center;
+            text-decoration: none;
+            background-color: var(--primary-light);
+            color: var(--primary-main);
+            font-weight: 600;
+            padding: 12px 20px;
+            border-radius: 8px;
+            transition: background-color 0.2s ease, color 0.2s ease;
+        }
+
+        .btn-navigation:hover {
+            background-color: var(--accent-purple);
+            color: white;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.9rem;
+            color: #A393A6;
+        }
+
+        /* Adaptation pour les téléphones */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            body {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Français 3<sup>ème</sup></h1>
+        <p>Perspective annuelle : S’affirmer, s’émanciper : l’engagement humaniste</p>
+    </header>
+
+    <main class="program-grid">
+
+        <section class="program-card">
+            <div>
+                <h2>Montrer, témoigner, réparer : le roman, le récit à l’épreuve du réel (récit, fiction)</h2>
+                <p>À mesure qu’ils s’affranchissent de l’héritage épique, roman et récit s’engagent dans un rapport privilégié et complexe avec le réel. Montrer, témoigner, tenter de réparer sont autant de possibles littéraires offerts à l’auteur.</p>
+            </div>
+            <a href="html/fiction.html" class="btn-navigation">Accéder au chapitre</a>
+        </section>
+
+        <section class="program-card">
+            <div>
+                <h2>S’unir, se désunir, se réunir en mots : l’amour en poésie (poésie)</h2>
+                <p>Lesbie, Marie, Délie, Aurélia, Nadja, Elsa, Hélène… autant de muses incarnées dont le visage et la voix conjuguent amour et poésie. </p>
+            </div>
+            <a href="html/poesie.html" class="btn-navigation">Accéder au chapitre</a>
+        </section>
+
+        <section class="program-card">
+            <div>
+                <h2>Représenter, penser, questionner la société au théâtre : la scène et la Cité (théâtre)</h2>
+                <p>Lors des concours tragiques, c’est en lien direct avec les évènements de la Cité que les tragédies antiques puisent dans les mythes.</p>
+            </div>
+            <a href="html/theatre.html" class="btn-navigation">Accéder au chapitre</a>
+        </section>
+
+        <section class="program-card">
+            <div>
+                <h2>Défendre les valeurs humanistes : écrivains et journalistes acteurs de leur temps (articles, essai, récit)</h2>
+                <p>Dès le début du XIXe siècle, l’essor de la presse bouleverse le champ littéraire : les écrivains deviennent journalistes, les journalistes se font écrivains et les modes d’écriture s’influencent.</p>
+            </div>
+            <a href="html/lumieres.html" class="btn-navigation">Accéder au chapitre</a>
+        </section>
+
+        <section class="program-card admin-card">
+            <div>
+                <h2>Planifier, cheminer, réussir</h2>
+                <p>Programme et attendus ; objectifs et progression pédagogiques.</p>
+            </div>
+            <a href="html/progression.html" class="btn-navigation">Consulter la progression</a>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Espace Numérique de Français - Classe de 3ème</p>
+    </footer>
+
+</body>
+</html>
